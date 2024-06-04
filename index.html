@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="navigation-container ontainer">
+            <div class="navigation-logo">
+                <img class="navigation-logo-img" src="image 1.png" alt="">
+            </div>
+            <div class="nav-bar">
+                <input type="checkbox" id="check">
+                <label for="check" class="chackbtn">
+                    <i class="fa-solid fa-bars" id="chack"></i>
+                    <i class="fa-solid fa-xmark" id="unchack"></i>
+                </label>
+                <nav class="navigation">
+
+                    <a class="navigation-list active" href="#Home">Home</a>
+                    <a class="navigation-list" href="#About">About</a>
+                    <a class="navigation-list" href="#Service">Service</a>
+                    <a class="navigation-list" href="#Safety">Safety</a>
+                    <a class="navigation-list" href="#Careers">Careers</a>
+                    <div class="buttons">
+
+                        <button class="nav-button hover">Contact Us</button>
+                    </div>
+                </nav>
+
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="home-container">
+                <div class="home-container-text">
+                    <h1 class="home-container-heading"> <span class="word">World &nbsp;class</span> charter and
+                        maintenance flights</h1>
+                    <p class="home-container-paragraph">Our goal is simply to offer the highest standards of
+                        professionalism and service as measured by our safety record, dispatch reliability and customer
+                        satisfaction</p>
+                    <div class="home-container-btn">
+                        <button class="home-container-button">Booking Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="services-container">
+            <div class="container">
+                <div class="company-services">
+                    <div class="company-services-headings">
+                        <h1 class="company-services-heading"><span class="company-heading word">Companies&nbsp;
+                            </span>that have used our services</h1>
+                    </div>
+                    <div class="company-services-imges-container">
+                        <div class="">
+                            <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7777 6.40328H12.4698C12.3407 6.40328 12.2354 6.50856 12.2354 6.63766V10.7221C12.7429 10.2635 13.3464 9.90944 14.012 9.69311V6.63766C14.0121 6.50856 13.9068 6.40328 13.7777 6.40328ZM22.3162 21.5919C22.1708 21.7416 21.9295 21.7452 21.7798 21.6L19.4886 19.3767C19.3389 19.2314 19.3353 18.99 19.4805 18.8403L19.5277 18.7918L18.2446 17.5468C17.5155 18.1705 16.569 18.5472 15.5343 18.5472C13.23 18.5472 11.362 16.6793 11.362 14.375C11.362 12.0708 13.23 10.2028 15.5343 10.2028C17.8386 10.2028 19.7065 12.0708 19.7065 14.375C19.7065 15.2651 19.4276 16.09 18.9527 16.7673L20.2606 18.0364L20.3078 17.9878C20.453 17.8382 20.6944 17.8345 20.8441 17.9798L23.1353 20.2031C23.285 20.3484 23.2887 20.5897 23.1434 20.7394L22.3162 21.5919ZM15.5343 11.3791C13.8797 11.3791 12.5384 12.7204 12.5384 14.375C12.5384 16.0296 13.8797 17.3709 15.5343 17.3709C17.1889 17.3709 18.5302 16.0296 18.5302 14.375C18.5302 12.7204 17.1889 11.3791 15.5343 11.3791ZM4.18781 21.7501V20.6266C4.18781 20.0087 4.82058 19.5032 5.59392 19.5032H8.10375V16.8835H2.39888C1.49203 16.8834 0.75 16.1414 0.75 15.2345V3.89106C0.75 2.98417 1.49198 2.24219 2.39888 2.24219H20.5496C21.4565 2.24219 22.1985 2.98417 22.1985 3.89106V15.2345C22.1985 16.1414 21.4565 16.8834 20.5496 16.8834H20.1494L19.9029 16.6442C20.2564 15.9651 20.4565 15.1934 20.4565 14.375C20.4565 14.2847 20.454 14.195 20.4491 14.1059H20.8197V3.84963C20.8197 3.72386 20.7168 3.62097 20.591 3.62097H2.35753C2.23177 3.62097 2.12888 3.72386 2.12888 3.84963V14.1059H10.6195C10.6147 14.195 10.6121 14.2847 10.6121 14.375C10.6121 16.8591 12.453 18.9134 14.8448 19.2489V19.5031H17.3546C18.128 19.5031 18.7607 20.0086 18.7607 20.6265V21.75H4.18781V21.7501ZM5.87189 10.0538C5.7428 10.0538 5.63752 10.159 5.63752 10.2881V13.2278C5.63752 13.3569 5.7428 13.4622 5.87189 13.4622H7.1798C7.30889 13.4622 7.41417 13.3569 7.41417 13.2278V10.2881C7.41417 10.159 7.30889 10.0538 7.1798 10.0538H5.87189ZM15.7687 4.72581C15.6396 4.72581 15.5343 4.83109 15.5343 4.96019V9.45278C16.1608 9.45278 16.7598 9.57011 17.3109 9.78358V4.96019C17.3109 4.83109 17.2057 4.72581 17.0766 4.72581H15.7687ZM10.4788 8.26802C10.0428 8.26802 9.6068 8.26802 9.17081 8.26802C9.04172 8.26802 8.93644 8.3733 8.93644 8.50239V13.2279C8.93644 13.357 9.04172 13.4622 9.17081 13.4622H10.4788C10.6079 13.4622 10.7131 13.357 10.7131 13.2279C10.7131 11.5525 10.7131 10.1777 10.7131 8.50239C10.7131 8.3733 10.6079 8.26802 10.4788 8.26802Z" fill="white"/>
+                            </svg> -->
+                        </div>
+                        <img class="company-services-imges" src="purepng 1.png" alt="">
+                        <img class="company-services-imges" src="Exxon Mobil 1.png" alt="">
+                        <img class="company-services-imges" src="pertamina_logo_WB 1.png" alt="">
+                        <img class="company-services-imges" src="partro.png" alt="">
+                    </div>
+                </div>
+
+                <div class="our-services">
+                    <div class="our-services-imges">
+                        <div class="image-hover-link-container">
+                            <span class="our-services-content-link-heading">Our Service</span>
+                            <p class="our-services-content-paragraphs-link">Travira Air is totally committed to
+                                supporting our clients by providing safe and reliable solutions for their air charter
+                                needs.</p>
+                        </div>
+                        <img class="our-services-imges" src="unsplash_lwEXRPUIWBo.png" alt="">
+                    </div>
+                    <div class="our-services-content">
+                        <div class="our-services-content-headings">
+                            <h1 class="our-services-content-heading">Our <span>Service</span></h1>
+                            <p class="our-services-content-paragraphs">Travira Air is totally committed to supporting
+                                our clients by providing safe and reliable solutions for their air charter needs.</p>
+                            <div class="service-links">
+                                <div class="service-links-left ">
+                                    <a class="links" href="#">SCHEDULED & SPOT CHARTER</a>
+                                    <a class="links" href="#">LONGTERM CONTRACT</a>
+                                    <a class="links" href="#">MEDICAL EVACUATION FLIGHT</a>
+                                    <a class="links" href="#">AIRCRAFT MANAGEMENT</a>
+                                </div>
+                                <div class="service-links-right">
+                                    <a class="links" href="#">AIRCRAFT MRO</a>
+                                    <a class="links" href="#">ONSHORE</a>
+                                    <a class="links" href="#">OFFSHORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="our-safety-cotainer">
+                <div class="our-safety-cotainer-content">
+                    <div class="our-safety-cotainer-content-headings">
+                        <h1 class="our-safety-cotainer-content-heading">Safety</h1>
+                        <p class="our-safety-cotainer-content-paragraph">It is a matter of pride for Travira Air that we
+                            have one of the best air charter safety records in the region</p>
+                    </div>
+                    <div class="our-safety-cotainer-content-links">
+                        <div class="our-safety-cotainer-content-link-left">
+                            <a class="our-safety-cotainer-links" href="#">MANAGEMENT COMMITMENT</a>
+                            <a class="our-safety-cotainer-links" href="#">IT-BASED TRACKING AND MONITORING</a>
+                            <a class="our-safety-cotainer-links" href="#">INDEPENDENT VERIFICATION</a>
+                            <a class="our-safety-cotainer-links" href="#">INTERNATIONAL ACCREDITATION</a>
+                            <a class="our-safety-cotainer-links" href="#">BEHIND THE SCENES</a>
+                        </div>
+                        <div class="our-safety-cotainer-content-link-right">
+                            <a class="our-safety-cotainer-links" href="#">GLOBAL OUTLOOK</a>
+                            <a class="our-safety-cotainer-links" href="#">PILOTS AND CREW</a>
+                            <a class="our-safety-cotainer-links" href="#">MEDICAL FACILITIES</a>
+                            <a class="our-safety-cotainer-links" href="#">AIRCRAFT FLEET</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-safety-cotainer-imges">
+                    <div class="image-hover-link-safty-container">
+                        <span class="our-services-content-link-heading">Safety</span>
+                        <p class="our-services-content-paragraphs-link">It is a matter of pride for Travira Air that we
+                            have one of the best air charter safety records in the region</p>
+                    </div>
+                    <img class="our-safety-cotainer-imge" src="unsplash_lwEXRPUIWBo (1).png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="flights-container">
+                <div class="flights-content-container">
+                    <h1 class="flights-content-heading">Fleet</h1>
+                    <p class="flights-content-paragraph">Travira Air is totally committed to supporting our clients by
+                        providing safe and reliable solutions for their air charter needs.</p>
+                </div>
+                <div class="sliders-container">
+                    <div class="flight-slider-section">
+                        <div class="swiper clientSliderSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge">
+                                        <img class="flights-slies-img" src="ai/roplane.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">CESSNA 208 CARAVAN</h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge img">
+                                        <img class="flights-slies-img" src="aroplan.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">BEECHCRAFT B1900D</h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge">
+                                        <img class="flights-slies-img" src="ai/roplane.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">CESSNA 208 CARAVAN</h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge img">
+                                        <img class="flights-slies-img" src="aroplan.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">BEECHCRAFT B1900D</h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge">
+                                        <img class="flights-slies-img" src="ai/roplane.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">CESSNA 208 CARAVAN</h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge img">
+                                        <img class="flights-slies-img" src="aroplan.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">BEECHCRAFT B1900D</h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge">
+                                        <img class="flights-slies-img" src="ai/roplane.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">CESSNA 208 CARAVAN</h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge img">
+                                        <img class="flights-slies-img" src="aroplan.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">BEECHCRAFT B1900D</h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flights-slies-imge">
+                                        <img class="flights-slies-img" src="ai/roplane.png" alt="">
+                                    </div>
+                                    <div class="flights-slies-imge-headings">
+                                        <h1 class="flights-slies-imge-heading">CESSNA 208 CARAVAN</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+    
+                            <!-- </div> -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+    
+                        </div>
+    
+                    </div>
+                  
+                </div>
+
+            </div>
+        </div>
+        <div class="contact-us-container">
+            <div class="container">
+                <div class="contact-us-container-headings">
+                    <h1 class="contact-us-container-heading">This is what clients say about us</h1>
+                </div>
+                <div class="contact-us-cards-container">
+                    <div class="client-slider-section">
+                        <div class="swiper mySwiper container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="image 22.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Ade Pranaya</h1>
+                                                <p class="contact-us-person-paragraph">PT Pertamina</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading">Thank you Travira air I'm
+                                                    very happy,
+                                                    my work goes smoothly</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card card-2">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="Ellipse.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Efran Adiyatma</h1>
+                                                <p class="contact-us-person-paragraph">PT Petronas</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading heading2">Thank you, I was
+                                                    helped by
+                                                    being there
+                                                    travira air The flight is very comfortable and safe.</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="image 22.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Ade Pranaya</h1>
+                                                <p class="contact-us-person-paragraph">PT Pertamina</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading">Thank you Travira air I'm
+                                                    very happy,
+                                                    my work goes smoothly</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card card-2">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="Ellipse.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Efran Adiyatma</h1>
+                                                <p class="contact-us-person-paragraph">PT Petronas</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading heading2">Thank you, I was
+                                                    helped by
+                                                    being there
+                                                    travira air The flight is very comfortable and safe.</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="image 22.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Ade Pranaya</h1>
+                                                <p class="contact-us-person-paragraph">PT Pertamina</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading">Thank you Travira air I'm
+                                                    very happy,
+                                                    my work goes smoothly</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card card-2">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="Ellipse.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Efran Adiyatma</h1>
+                                                <p class="contact-us-person-paragraph">PT Petronas</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading heading2">Thank you, I was
+                                                    helped by
+                                                    being there
+                                                    travira air The flight is very comfortable and safe.</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="image 22.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Ade Pranaya</h1>
+                                                <p class="contact-us-person-paragraph">PT Pertamina</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading">Thank you Travira air I'm
+                                                    very happy,
+                                                    my work goes smoothly</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card card-2">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="Ellipse.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Efran Adiyatma</h1>
+                                                <p class="contact-us-person-paragraph">PT Petronas</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading heading2">Thank you, I was
+                                                    helped by
+                                                    being there
+                                                    travira air The flight is very comfortable and safe.</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="contact-us-reiwese-card">
+                                        <div class="contact-us-peson-data">
+                                            <div class="contact-us-person-image">
+                                                <img src="image 22.png" alt="">
+                                            </div>
+                                            <div class="contact-us-person-headings">
+                                                <h1 class="contact-us-person-heading">Ade Pranaya</h1>
+                                                <p class="contact-us-person-paragraph">PT Pertamina</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-us-peson-reviews-data">
+                                            <div class="contact-us-peson-reviews-data-headings">
+                                                <h1 class="contact-us-peson-reviews-data-heading">Thank you Travira air I'm
+                                                    very happy,
+                                                    my work goes smoothly</h1>
+                                            </div>
+                                            <div class="contact-us-peson-reviews-data-reviw-stars">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                                <img class="reviews-stars" src="Star-Yellow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                    
+
+                </div>
+             
+                <div class="contact-us">
+                    <div class="contact-us-headings">
+                        <h1 class="contact-us-heading">Don't hesitate to contact us</h1>
+                    </div>
+                    <div class="contact-us-buttons">
+                        <button class="contact-us-button">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        </div>
+        </div>
+        
+
+        <!-- Swiper JS -->
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="company-informations">
+                    <div class="company-informations-heading">
+                        <h1 class="company-informations-headings">Company</h1>
+                    </div>
+                    <div class="company-informations-paragraphs">
+                        <p class="company-informations-paragraph">About</p>
+                        <p class="company-informations-paragraph">Careers</p>
+                        <p class="company-informations-paragraph">Blog</p>
+                    </div>
+
+                </div>
+                <div class="company-service">
+                    <div class="company-informations-heading">
+                        <h1 class="company-informations-headings">Service</h1>
+                    </div>
+                    <div class="company-informations-paragraphs">
+                        <p class="company-informations-paragraph">Scheduled & Spot Charter</p>
+                        <p class="company-informations-paragraph">Medical Evacuation Flight</p>
+                        <p class="company-informations-paragraph">Aircraft Management</p>
+                    </div>
+                </div>
+                <div class="company-office">
+                    <div class="company-service">
+                        <h1 class="company-informations-headings">Office</h1>
+                    </div>
+                    <div class="company-informations-paragraphs">
+                        <p class="company-informations-paragraph">blueair@gmail.com</p>
+                        <p class="company-informations-paragraph">Lahore,Pakistan</p>
+                        <p class="company-informations-paragraph">Allama Iqbal International Airport, Airport <br>
+                            Road, Lahore, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
